@@ -10,4 +10,4 @@
     * [item6. 불필요한 객체 생성을 피하라](3-e/2-./item6..md)
   * [3장. 모든 객체의 공통 메서드](3-e/3-./README.md)
     * [item10. equals는 일반 규약을 지켜 재정의하라.](3-e/3-./item10.-equals-..md)
-* [Page 2](page-2.md)
+    * [item12. toString을 항상 재정의하라](3-e/3-./item12.-tostring.md)
