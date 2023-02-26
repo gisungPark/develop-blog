@@ -12,3 +12,8 @@
     * [item10. equals는 일반 규약을 지켜 재정의하라.](3-e/3-./item10.-equals-..md)
     * [item12. toString을 항상 재정의하라](page-2.md)
     * [item13. clone 재정의는 주의해서 진행해라.](3-e/3-./item13.-clone-..md)
+* [재고시스템으로 알아보는 동시성 이슈](undefined/README.md)
+  * [synchronized를 이용한 동시성 제어](undefined/synchronized.md)
+  * [Database를 이용한 동시성 제어](undefined/database.md)
+  * [Redis를 이용한 동시성 제어](undefined/redis.md)
+  * [@Transactional 이해](undefined/transactional.md)
