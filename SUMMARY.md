@@ -29,3 +29,4 @@
 * [타입딜 서버 구축 챌린지](side-project/undefined/README.md)
   * [gitHub Action CI/CD](side-project/undefined/github-action-ci-cd.md)
   * [HttpMediaTypeNotAcceptableException](side-project/undefined/httpmediatypenotacceptableexception.md)
+  * [JPA를 활용한 페이징 처리](side-project/undefined/jpa.md)
