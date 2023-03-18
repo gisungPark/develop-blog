@@ -64,6 +64,19 @@ public abstract class GenericServlet implements Servlet, ServletConfig,
 }
 </code></pre>
 
+| ►서버 TCP/IP 연결 대기, 소켓 연결                                 |
+| ------------------------------------------------------- |
+| ► HTTP 요청 메시지 파싱                                        |
+| ► HTTP method, URL 인지                                   |
+| ► Content-Type 확인                                       |
+| ► HTTP 메시지 바디 내용 파싱                                     |
+| ► 저장 프로세스 실행                                            |
+| <mark style="background-color:red;">► 비지니스 로직 실행</mark> |
+| ► HTTP 응답 메시지 생성                                        |
+| ► TCP/IP에 응답 전달, 소켓 종료                                  |
+
+서블릿은 개발자가 비지니스 로직에 집중할 수 있도록, HTTP 통신을 위한 일련의 과정들을 모두 자동으로 해준다. 그덕에 개발자는 단순히 HTTP 요청 메시지로 생성된 request를 읽어서 비즈니스 로직을 수행하고 response를 반화하면 된다.&#x20;
+
 
 
 서블릿이 요구하는 규약을 지키면서 개발을 진행하면, http 요청 정보 사용과 응답값 생성이 쉽고 빨라진다.&#x20;
@@ -83,3 +96,13 @@ public abstract class GenericServlet implements Servlet, ServletConfig,
 
 
 ## 스프링 컨테이너 맛보기
+
+
+
+
+
+
+
+{% embed url="https://steady-coding.tistory.com/462#recentComments" %}
+
+{% embed url="https://jusungpark.tistory.com/15" %}
