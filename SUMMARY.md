@@ -22,6 +22,8 @@
   * [02. 스프링 부트 시작하기](study/toby-spring/02..md)
   * [03. 독립 실행형 서블릿 어플리케이션](study/toby-spring/03..md)
     * [Servlet](study/toby-spring/03./servlet.md)
+    * [스프링 Bean이란?, Bean을 관리하는 컨테이너란?](study/toby-spring/03./bean-bean.md)
+    * [@ComponentScan](study/toby-spring/03./componentscan.md)
 * [재고시스템으로 알아보는 동시성 이슈](study/concurrency-issues-byjava/README.md)
   * [synchronized를 이용한 동시성 제어](study/concurrency-issues-byjava/synchronized.md)
   * [Database를 이용한 동시성 제어](study/concurrency-issues-byjava/database.md)
