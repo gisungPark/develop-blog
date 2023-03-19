@@ -34,6 +34,8 @@
   * [Database를 이용한 동시성 제어](study/concurrency-issues-byjava/database.md)
   * [Redis를 이용한 동시성 제어](study/concurrency-issues-byjava/redis.md)
   * [@Transactional의 이해](study/concurrency-issues-byjava/transactional.md)
+* [모던 자바 인 액션](study/undefined/README.md)
+  * [자바 8, 9, 10, 11:무슨일이 일어나고 있는가?](study/undefined/8-9-10-11.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 
