@@ -77,7 +77,7 @@ static List<Integer> intArrayAsListByAbstract(int[] a){
 골격 구현 클래스의 아름다움은 추상 클래스처럼 구현을 도와주는 동시에, 추상 클래스로 타입을 정의할 때 따라오는 심각한 제약에서는 자유롭다는 점에 있다.\
 
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt="일반 인터페이스를 구현하는 경우와 추상 골격 클래스를 구현하는 케이스"><figcaption><p>일반 인터페이스를 구현하는 경우와 추상 골격 클래스를 구현하는 케이스</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="일반 인터페이스를 구현하는 경우와 추상 골격 클래스를 구현하는 케이스"><figcaption><p>일반 인터페이스를 구현하는 경우와 추상 골격 클래스를 구현하는 케이스</p></figcaption></figure>
 
 
 

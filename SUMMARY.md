@@ -28,6 +28,7 @@
   * [04. DI와 테스트, 디자인 패턴](study/toby-spring/04.-di.md)
   * [05. 자동 구성 기반 애플리케이션](study/toby-spring/05./README.md)
     * [메타 애노테이션과 합성 애노테이션](study/toby-spring/05./undefined.md)
+    * [빈 오브젝트의 역할과 구분](study/toby-spring/05./undefined-1.md)
 * [재고시스템으로 알아보는 동시성 이슈](study/concurrency-issues-byjava/README.md)
   * [synchronized를 이용한 동시성 제어](study/concurrency-issues-byjava/synchronized.md)
   * [Database를 이용한 동시성 제어](study/concurrency-issues-byjava/database.md)
