@@ -17,6 +17,7 @@
   * [4장 클래스와 인터페이스](study/3-e/4/README.md)
     * [item20. 추상 클래스보다는 인터페이스를 우선하라](study/3-e/4/item20./README.md)
       * [템플릿 메서드 패턴](study/3-e/4/item20./undefined.md)
+    * [item22. 인터페이스는 타입을 정의하는 용도로만 사용하라](study/3-e/4/item22..md)
 * [토비의 스프링 부트 - 이해와 원리](study/toby-spring/README.md)
   * [01. 스프링 부트 살펴보기](study/toby-spring/01..md)
   * [02. 스프링 부트 시작하기](study/toby-spring/02..md)
