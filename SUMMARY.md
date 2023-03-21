@@ -19,6 +19,7 @@
       * [템플릿 메서드 패턴](study/3-e/4/item20./undefined.md)
     * [item22. 인터페이스는 타입을 정의하는 용도로만 사용하라](study/3-e/4/item22..md)
     * [item23. 태그 달린 클래스보다는 클래스 계층구조를 활용하라](study/3-e/4/item23..md)
+    * [item25. 톱레벨 클래스는 한 파일에 하나만 담으라](study/3-e/4/item25..md)
 * [토비의 스프링 부트 - 이해와 원리](study/toby-spring/README.md)
   * [01. 스프링 부트 살펴보기](study/toby-spring/01..md)
   * [02. 스프링 부트 시작하기](study/toby-spring/02..md)
