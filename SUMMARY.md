@@ -40,6 +40,7 @@
 * [모던 자바 인 액션](study/modern-java-in-action/README.md)
   * [자바 8, 9, 10, 11:무슨일이 일어나고 있는가?](study/modern-java-in-action/8-9-10-11.md)
   * [동작 파라미터화 코드 전달하기](study/modern-java-in-action/undefined.md)
+  * [람다 표현식](study/modern-java-in-action/undefined-1.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 

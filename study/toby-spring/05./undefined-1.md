@@ -6,13 +6,13 @@
 
 
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 스프링부트가 컨테이너리스를 지원하기 위해서 내장형 서블릿 컨테이너를 이용하는 독립실행형 애플리케이션 방식으로 동작하면서 요구되어진 빈 2개가 있다. ServletWebServerFactory, DispatcherServlet&#x20;
 
 이걸 어떤 식으로 구성해서 어떤 전략으로 작성할 것인지 생각해야 한다.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 스프링 컨테이너가 생성하고 관리하는 빈들은 컨테이너 인프라스트러쳐 빈과 애플리케이션 빈으로 나뉜다.&#x20;
 
