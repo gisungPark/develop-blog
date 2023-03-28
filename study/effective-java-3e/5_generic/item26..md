@@ -1,10 +1,12 @@
 # item26. 로 타입은 사용하지 말라
 
+## 제네릭이란
+
 클래스와 인터페이스 선언에 타입 매개변수가 쓰이면, 이를 제네릭 클래스 혹은 제네릭 인터페이스라 한다. 제네릭 클래스와 제네릭 인터페이스를 통틀어 제네릭 타입(generic type)이라 한다.
 
 제네릭 타입에서 타입 매개변수를 사용하지 않은 경우를 <mark style="color:orange;">**로 타입**</mark>이라 하는데, 이는 권장되는 사용법이 아니다. 제네릭이 사용되기 전 코드와 호환되도록 하기 위한 궁여지책에 불과하다.
 
-
+## 로 타입의 예외 발생 가능성
 
 * 로 타입이 원인이 되는 예외 케이스\
   stamp 대신 coin을 넣어도 아무 오류 없이 컴파일되고 실행된다.&#x20;
@@ -23,7 +25,7 @@ for(Iterator i = stamps.iterator(); i.hasNext(); ) {
 
 로 타입(타입 매개변수가 없는 제네릭 타입)을 쓰는 걸 언어 차원에서 막아 놓지는 않았지만 절대로 써서는 안 된다. 로 타입을 쓰면 제네릭이 안겨주는 안전성과 표현력을 모두 읽게 된다.&#x20;
 
-* List(로 타입)과 List\<Object> 비교
+## List(로 타입)과 List\<Object> 비교
 
 아래 코드는 컴파일되나 strings.get(0)을 형변환하려 할 때, ClassCastException을 던진다. Integer 값을 String으로 형 변환하려 했기 때문이다.
 
@@ -54,10 +56,6 @@ private static void unsafeAdd(List<Object> list, Object o) {
     list.add(o);
 }
 ```
-
-
-
-
 
 
 
