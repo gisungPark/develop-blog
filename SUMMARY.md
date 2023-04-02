@@ -26,6 +26,8 @@
     * [item28. 배열보다는 리스트를 사용하라](study/effective-java-3e/5\_generic/item28..md)
     * [item29. 이왕이면 제네릭 타입으로 만들라](study/effective-java-3e/5\_generic/item29..md)
     * [item30. 이왕이면 제네릭 메서드로 만들라.](study/effective-java-3e/5\_generic/item30.-..md)
+    * [item32. 제네릭과 가변인수를 함께 쓸 때는 신중하라](study/effective-java-3e/5\_generic/item32./README.md)
+      * [가변인수](study/effective-java-3e/5\_generic/item32./undefined.md)
 * [토비의 스프링 부트 - 이해와 원리](study/toby-spring/README.md)
   * [01. 스프링 부트 살펴보기](study/toby-spring/01..md)
   * [02. 스프링 부트 시작하기](study/toby-spring/02..md)
