@@ -69,7 +69,8 @@ Comparator<Apple> byWeight
 
 ### 함수형 인터페이스&#x20;
 
-<mark style="color:orange;">**하나의 추상 메서드를 지정하는 인터페이스를 함수형 인터페이스라 한다.**</mark>\ <mark style="color:orange;">****</mark>아래와 같은 예시가 있다.
+<mark style="color:orange;">**하나의 추상 메서드를 지정하는 인터페이스를 함수형 인터페이스라 한다.**</mark>\
+아래와 같은 예시가 있다.
 
 \*많은 디폴트 메서드가 있더라도 추상 메서드가 하나면 오직 함수형 인터페이스이다.
 
