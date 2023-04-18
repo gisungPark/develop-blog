@@ -4,11 +4,7 @@
 
 그러나 이 장에서 기대하는 **이종 컨테이너는** 서로 다른 타입을 넣을 수 있는 컨테이너를 말한다.&#x20;
 
-{% hint style="info" %}
-컨테이너란? 다른 객체를 담을 수 있는 또 다른 객체를 말한다. List, Set, Queue, Map 등의 예가 있다.
-
-[https://jeongsam.tistory.com/82](https://jeongsam.tistory.com/82)
-{% endhint %}
+따라서, 타입 안전 이종 컨테이너란 **타입 안전성**이 보장된 **서로 다른 타입의 원소**를 가지는 자료구조를 뜻한다.
 
 <pre class="language-java" data-line-numbers><code class="lang-java">Map&#x3C;***, ***> map = new HashMap&#x3C;>();
 // 기대 값 ===========
@@ -19,11 +15,23 @@ map<a data-footnote-ref href="#user-content-fn-1">.</a>put(String, 72);   >> Str
 
 </code></pre>
 
+{% hint style="info" %}
+컨테이너란? 다른 객체를 담을 수 있는 또 다른 객체를 말한다. List, Set, Queue, Map 등의 예가 있다.
+
+[https://jeongsam.tistory.com/82](https://jeongsam.tistory.com/82)
+{% endhint %}
+
 ## 타입 안전 이종 컨테이너 패턴
 
 보통의 제네릭 컨테이너는 정의된 하나의 타입만 담을 수 있다. 하지만 종종 더 유연한 수단이 필요한 경우가 있다. 예컨대 데이터베이스의 행은 임의 개수의 컬럼을 가질 수 있는데, 해당하는 타입의 value만 넣을 수 있도록 만들 수 있는 컨테이너가 있으면 멋질 것이다.
 
-특정한 타입, 예를 들어 문자열이면 문자열 값을 Map 컨테이너의 value로 넣고 싶고, 숫자면 숫자 값을 value로 넣는 컨테이너를 만들고 싶다고 하면 아래와 같은 구조를 쉽게 떠올릴 것이다.
+> 타입 안전 이종 컨테이너 요구사항
+>
+> * [ ] 타입 토큰(Class 객체)를 키로 가지는 Map 인스턴스
+> * [ ] key와 value의 타입 일관성
+> * [ ] put, get 메서드 내, 타입 안전성 확보
+
+특정한 타입, 예를 들어 문자열이면 문자열 값만을 Map 컨테이너의 value로 넣고, 숫자면 숫자 값만을 value로 넣는 컨테이너를 만들고 싶다고 하면 아래와 같은 구조를 쉽게 떠올릴 것이다.
 
 ```java
 public class Database {
@@ -51,11 +59,13 @@ column.put(Integer, 12);
 column.put(String, 72);  << 에러 발생을 기대했으나, 정상 동작
 ```
 
-그러나 위의 Column 객체는 기대와 다르게 타입 safe 하지 않을뿐더러 제네릭조차도 제대로 활용하지 못한 케이스이다.(map에서 커낼때, 형변환을 클라이언트가 직접 해야한다.)
+그러나 위의 Column 객체는 기대와 다르게 타입 세이프 하지 않을뿐더러 제네릭조차도 제대로 활용하지 못한 케이스이다.(map에서 커낼때, 형변환을 클라이언트가 직접 해야한다.)
 
+> * [x] 타입 토큰(Class 객체)를 키로 가지는 Map 인스턴스
+> * [ ] key와 value의 타입 안전성
+> * [ ] put, get 메서드 내, 타입 안전성 확보
 
-
-### key 타입 매개변수화
+## key와 value의 타입 안전성 확보
 
 해당 문제의 해법으로는 <mark style="color:orange;">**컨테이너 대신 Key에 타입을 선언함으로써 해결할 수 있다.**</mark> Key 값을 매개변수화한 다음, 컨테이너에 값을 넣거나 뺄 때 매개변수화한 키를 함께 제공하면 된다. **이렇게 하면 제네릭 타입 시스템이 값의 타입과 키가 같음을 보장해 줄 것이다**. 이러한 설계 방식을 <mark style="color:orange;">**타입 안전 이종 컨테이너 패턴**</mark>이라 한다.&#x20;
 
@@ -88,6 +98,10 @@ public static void main(String[] args) {
 }
 
 ```
+
+> * [x] 타입 토큰(Class 객체)를 키로 가지는 Map 인스턴스
+> * [x] key와 value의 타입 안전성
+> * [x] put, get 메서드 내, 타입 안전성 확보
 
 {% hint style="info" %}
 * 컴파일타임 타입 정보와 런타임 타입 정보를 알아내기 위해 메서드들이 주고받는 class 리터럴을 **타입 토큰**이라 한다.&#x20;
