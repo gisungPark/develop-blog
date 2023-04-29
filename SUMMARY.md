@@ -51,6 +51,9 @@
   * [자바 8, 9, 10, 11:무슨일이 일어나고 있는가?](study/modern-java-in-action/8-9-10-11.md)
   * [동작 파라미터화 코드 전달하기](study/modern-java-in-action/undefined.md)
   * [람다 표현식](study/modern-java-in-action/undefined-1.md)
+* [TDD, 클린코드 with java](study/tdd-cleancode-with-java/README.md)
+  * [미션2. 로또 - TDD](study/tdd-cleancode-with-java/2.-tdd/README.md)
+    * [팩토리 메소드 패턴](study/tdd-cleancode-with-java/2.-tdd/undefined.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 
