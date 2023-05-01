@@ -52,8 +52,11 @@
   * [동작 파라미터화 코드 전달하기](study/modern-java-in-action/undefined.md)
   * [람다 표현식](study/modern-java-in-action/undefined-1.md)
 * [TDD, 클린코드 with java](study/tdd-cleancode-with-java/README.md)
-  * [미션2. 로또 - TDD](study/tdd-cleancode-with-java/2.-tdd/README.md)
-    * [팩토리 메소드 패턴](study/tdd-cleancode-with-java/2.-tdd/undefined.md)
+  * [미션2. 로또 - TDD](study/tdd-cleancode-with-java/mission-lotto/README.md)
+    * [step1. 문자열 계산기](study/tdd-cleancode-with-java/mission-lotto/step1./README.md)
+      * [1차 피드백](study/tdd-cleancode-with-java/mission-lotto/step1./1st-feedback.md)
+      * [2차 피드백](study/tdd-cleancode-with-java/mission-lotto/step1./2nd-feedback.md)
+      * [팩토리 메소드 패턴](study/tdd-cleancode-with-java/mission-lotto/step1./factory-pattern.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 
