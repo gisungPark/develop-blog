@@ -30,6 +30,8 @@
       * [가변인수](study/effective-java-3e/5\_generic/item32./undefined.md)
     * [item33. 타입 안전 이종 컨테이너를 고려하라](study/effective-java-3e/5\_generic/item33./README.md)
       * [슈퍼 타입 토큰](study/effective-java-3e/5\_generic/item33./undefined.md)
+  * [6장. 열거타입과 애너테이션](study/effective-java-3e/6\_enum-and-annotation/README.md)
+    * [item39. 명명 패턴보다 애너테이션을 사용하라](study/effective-java-3e/6\_enum-and-annotation/item39..md)
 * [토비의 스프링 부트 - 이해와 원리](study/toby-spring/README.md)
   * [01. 스프링 부트 살펴보기](study/toby-spring/01..md)
   * [02. 스프링 부트 시작하기](study/toby-spring/02..md)
