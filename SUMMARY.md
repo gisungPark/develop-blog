@@ -59,6 +59,8 @@
       * [1차 피드백](study/tdd-cleancode-with-java/mission-lotto/step1./1st-feedback.md)
       * [2차 피드백](study/tdd-cleancode-with-java/mission-lotto/step1./2nd-feedback.md)
       * [팩토리 메소드 패턴](study/tdd-cleancode-with-java/mission-lotto/step1./factory-pattern.md)
+    * [step2. 로또 - 자동 생성](study/tdd-cleancode-with-java/mission-lotto/step2./README.md)
+      * [객체지향 설계의 5원칙 - SOLID](study/tdd-cleancode-with-java/mission-lotto/step2./5-solid.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 
