@@ -131,7 +131,7 @@ public String processFile() throws IOException {
 }
 ```
 
-<img src="../../.gitbook/assets/image (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (1) (4).png" alt="" data-size="original">
 
 \*중복되는 준비 코드와 정리 코드가 작업 A와 작업 B를 감싸고 있다.&#x20;
 
