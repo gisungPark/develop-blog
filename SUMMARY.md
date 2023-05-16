@@ -33,6 +33,7 @@
   * [6장. 열거타입과 애너테이션](study/effective-java-3e/6\_enum-and-annotation/README.md)
     * [item39. 명명 패턴보다 애너테이션을 사용하라](study/effective-java-3e/6\_enum-and-annotation/item39..md)
   * [7장. 람다와 스트림](study/effective-java-3e/7-./README.md)
+    * [Stream API의 이해와 활용](study/effective-java-3e/7-./stream-api.md)
     * [item45. 스트림은 주의해서 사용하라](study/effective-java-3e/7-./item45..md)
 * [토비의 스프링 부트 - 이해와 원리](study/toby-spring/README.md)
   * [01. 스프링 부트 살펴보기](study/toby-spring/01..md)
