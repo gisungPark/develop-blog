@@ -4,7 +4,7 @@
 
 ## 스트림
 
-&#x20;스트림은 API는 다량은 데이터 처리 작업을 돕고자 자바 8에 추가되었다.&#x20;
+&#x20;스트림은 API는 다량의 데이터 처리 작업을 돕고자 자바 8에 추가되었다.&#x20;
 
 이 API가 제공하는 추상 개념 중 핵심은 아래 두 가지가 있다.&#x20;
 
@@ -14,6 +14,33 @@
 스트림 파이프라인은 소스 스트림에서 시작해 종단 연산으로 끝나며, 그 사이에 하나 이상의 중간 연산이 있을 수 있다. 각 중간 연산은 스트림을 어떠한 방식으로 변환한다. 예컨대 각 원소에 함수를 적용하거나 특정 조건을 만족 못하는 원소를 걸러낼 수 있다.&#x20;
 
 종단 연산은 마지막 중간 연산이 내놓은 스트림에 최후의 연산을 가한다. 원소를 정렬해 컬렉션에 담거나, 특정 원소 하나를 선택하거나, 모든 원소를 출력하는 식이다.&#x20;
+
+```java
+/* 중간 연산*/
+1) sorted
+Stream<Integer> sorted = operands.stream().sorted();
+
+2) filter
+Stream<Integer> integerStream = operands.stream().filter((value) -> value > 2);
+
+3) map
+list.map(s -> s.toUpperCase());
+
+
+/* 종단 연산 */
+1) forEach
+intList.stream().forEach(System.out::println); // 1,2,3
+intList.stream().forEach(x -> System.out.printf("%d : %d\n",x,x*x)); // 1,4,9
+
+2) reduce
+int sum = intList.stream().reduce((a,b) -> a+b).get();
+System.out.println("sum: "+sum);  // 6
+
+3) count(), min(), max() : 요소의 통계
+intList.stream().count();
+intList.stream().min(numberList);
+intList.stream().max(numberList);
+```
 
 
 
@@ -29,7 +56,7 @@
 
 ## 스트림의 사용
 
-스트림 API는 다재다능하여 사실상 어떠한 계산이라도 해낼수 있다. 하지만 할 수 있다는 뜻이지, 해야 한다는 뜻은 아니다. 스트림을 제대로 사용하면 프로그램이 짧고 깔끔해지지만, 잘못 사용하면 읽기 어렵고 유지보수도 힘들어진다. 스트림을 언제 써야 하는지 규정하는 규칙은 없지만 참고 할 만한 노하우는 있다.&#x20;
+스트림 API는 다재다능하여 사실상 어떠한 계산이라도 해낼수 있다. **하지만 할 수 있다는 뜻이지, 해야 한다는 뜻은 아니다. 스트림을 제대로 사용하면 프로그램이 짧고 깔끔해지지만, 잘못 사용하면 읽기 어렵고 유지보수도 힘들어진다.** 스트림을 언제 써야 하는지 규정하는 규칙은 없지만 참고 할 만한 노하우는 있다.&#x20;
 
 ### 아나그램 예제
 
@@ -43,22 +70,23 @@
 
 ```java
 public class Anagrams {
-	  public static void main(String[] args) throws IOException {
-      File dictionary = new File(args[0]);
-      int minGroupSize = Interger.parseInt(args[1]);
-      
-      Map<String, Set<String>> groups = new HashMap<>();
-      try(Scanner s = new Scanner(dictionary)){
-      	while(s.hasNext()){
-            String word = s.next();
-            groups.computeIfAbsent(alphabetize(word), 
-                              (unused) -> new TreeSet<>()).add(word);
-        }
-      }
-      
-      for(Set<String> group : groups.values())
-      	if(group.size() >= minGroupSize)
-        	System.out.println(group.size() + ":" + group);
+      public static void main(String[] args) throws IOException {
+            File dictionary = new File(args[0]);
+            int minGroupSize = Interger.parseInt(args[1]);
+            
+            Map<String, Set<String>> groups = new HashMap<>();
+            try(Scanner s = new Scanner(dictionary)){
+            	while(s.hasNext()){
+                  String word = s.next();
+                  groups.computeIfAbsent(alphabetize(word), 
+                                    (unused) -> new TreeSet<>()).add(word);
+                }
+            }
+            
+            for(Set<String> group : groups.values()) {
+            	if(group.size() >= minGroupSize)
+              	System.out.println(group.size() + ":" + group);
+             }
     }
     
     public static String alphabetize(String s){
@@ -111,25 +139,25 @@ try(Strem<String> words = Files.lines(dictionary)) {
     }
 ```
 
-스트림을 전에 본 적 없더라도 이 코드는 이해하기 쉬울 것이다. 스트림 변수의 이름을 words로 지어 스트림 안의 각 원소가 word임을 명확히 했다. 이 스트림 파이프라인에는 중간 연산은 없으며, 종단 연산에서는 모든 단어를 수집해 맵으로 모은다. 이 맵은 단어들을 아나그램끼리 묶어놓은 것으로, 앞선 두 프로그램이 생성한 맵과 실직적으로 같다. 그 다음으로 이 맵의 values()가 반환한 값으로부터 새로운 Stream\<List\<String>> 스트림을 연다 이 스트림의 원소는 물론 아나그램 리스트이다. 그 리스트 중 원소가 minGroupSize보다 적은 것은 필터리돼 무시된다. 마지막으로, 종단 연산인 forEach는 살아남은 리스트를 출력한다.&#x20;
+스트림을 전에 본 적 없더라도 이 코드는 이해하기 쉬울 것이다. 스트림 변수의 이름을 words로 지어 스트림 안의 각 원소가 word임을 명확히 했다. **이 스트림 파이프라인에는 중간 연산은 없으며, 종단 연산에서는 모든 단어를 수집해 맵으로 모은다.**&#x20;
+
+이 맵은 단어들을 아나그램끼리 묶어놓은 것으로, 앞선 두 프로그램이 생성한 맵과 실직적으로 같다. 그 다음으로 이 맵의 values()가 반환한 값으로부터 새로운 Stream\<List\<String>> 스트림을 연다. 이 스트림의 원소는 물론 아나그램 리스트이다. 그 리스트 중 원소가 minGroupSize보다 적은 것은 필터링 돼 무시된다. 마지막으로, 종단 연산인 forEach는 살아남은 리스트를 출력한다.&#x20;
 
 ### char 타입을 지원하지 않는 stream
 
-alphabetize 메서드도 스트림을 사용해 다르게 구현할 수 있으나, 기대해던것 보다 더 낮은 성능을 가질 가능성이 있다. 자바가 기본 타입인 char용 스트림을 지원하지 않기 때문이다. 아래 예제를 참고하자.
+alphabetize 메서드도 스트림을 사용해 다르게 구현할 수 있으나, 기대했던것 보다 더 낮은 성능을 가질 가능성이 있다. 자바가 기본 타입인 char 용 스트림을 지원하지 않기 때문이다. 아래 예제를 참고하자.
 
 ```java
 "Hello World!".chars().forEach(System.out::print);
 // char가 아닌 정수값이 출력됨 : 739488237102..
 ```
 
-올바른 print 메서드를 호출하려면 다음처럼 형변환을 명시적으로 해야한다. 하지만 char 값들을 처리할 때는 스트림을 삼가하는 편이 낫다.&#x20;
+올바른 print 메서드를 호출하려면 다음처럼 형변환을 명시적으로 해야한다. **하지만 char 값들을 처리할 때는 스트림을 삼가하는 편이 낫다.**&#x20;
 
 ```java
 "Hello World!".chars().forEach(x -> System.out.print((char) x);
 // char가 아닌 정수값이 출력됨 : 739488237102..
 ```
-
-
 
 ## 스트림은 항상 옳은가?
 
@@ -137,8 +165,6 @@ alphabetize 메서드도 스트림을 사용해 다르게 구현할 수 있으�
 * 스트림내 내부 로직이 복잡해 디버깅이 어려워진다.
 
 기존 코드를 스트림을 사용하도록 리팩터링하되, 새 코드가 더 나아 보일 때만 반영하자.
-
-
 
 ## 스트림을 언제 사용하는가?
 
