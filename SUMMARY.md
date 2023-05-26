@@ -65,7 +65,7 @@
     * [step2. 로또 - 자동 생성](study/tdd-cleancode-with-java/mission-lotto/step2./README.md)
       * [객체지향 설계의 5원칙 - SOLID](study/tdd-cleancode-with-java/mission-lotto/step2./5-solid.md)
     * [로또 피드백](study/tdd-cleancode-with-java/mission-lotto/undefined.md)
-  * [Untitled](study/tdd-cleancode-with-java/untitled.md)
+  * [미션3. 사다리타리 - FP, OOP](study/tdd-cleancode-with-java/3.-fp-oop.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 
