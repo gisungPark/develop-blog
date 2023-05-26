@@ -65,7 +65,10 @@
     * [step2. 로또 - 자동 생성](study/tdd-cleancode-with-java/mission-lotto/step2./README.md)
       * [객체지향 설계의 5원칙 - SOLID](study/tdd-cleancode-with-java/mission-lotto/step2./5-solid.md)
     * [로또 피드백](study/tdd-cleancode-with-java/mission-lotto/undefined.md)
-  * [미션3. 사다리타리 - FP, OOP](study/tdd-cleancode-with-java/3.-fp-oop.md)
+  * [미션3. 사다리타리 - FP, OOP](study/tdd-cleancode-with-java/3.-fp-oop/README.md)
+    * [단일 책임 원칙(SRP)](study/tdd-cleancode-with-java/3.-fp-oop/srp.md)
+    * [의존 역전 원칙(DIP)](study/tdd-cleancode-with-java/3.-fp-oop/dip.md)
+    * [디미터 법칙(Law of Demeter)](study/tdd-cleancode-with-java/3.-fp-oop/law-of-demeter.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 
