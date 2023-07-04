@@ -37,6 +37,7 @@
     * [item45. 스트림은 주의해서 사용하라](study/effective-java-3e/7-./item45..md)
   * [9ㅈㅏㅇㅁㅔㅅㅓㄷㅡ](study/effective-java-3e/9/README.md)
     * [item51. 메서드 시그니처는 신중히 설계하라.](study/effective-java-3e/9/item51.-..md)
+  * [item73. 추상화 수준에 맞는 예외를 던지라.](study/effective-java-3e/item73.-..md)
 * [토비의 스프링 부트 - 이해와 원리](study/toby-spring/README.md)
   * [01. 스프링 부트 살펴보기](study/toby-spring/01..md)
   * [02. 스프링 부트 시작하기](study/toby-spring/02..md)
