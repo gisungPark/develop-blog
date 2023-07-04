@@ -17,7 +17,10 @@ try {
 }
 ```
 
-##
+위 문제의 **해결책**
+
+* 상위 계층에서는 **저수준 예외**를 잡아 자신의 **추상화 수준에 맞는 예외**로 바꿔 던져야 한다.
+* 이를 **예외 번역(Exception Translation)** 이라 한다.
 
 
 
@@ -37,12 +40,19 @@ public E get(int index) {
     } catch (NoSuchElementException exc) {
         throw new IndexOutOfBoundsException("Index: " + index);
     }
+ }
 }
 ```
 
 }
 
-##
+* **예외 번역**시 저수준 예외가 디버깅에 도움이 된다면 **예외 연쇄(exception chaining)** 를 사용하는 게 좋다.
+
+## 예외 연쇄
+
+* **예외 연쇄란?**
+  * 문제의 **근본 원인(cause)** 인 **저수준 예외**를 **고수준 예외**에 실어 보내는 방식이다.
+  * 이를 통해 별도의 **접근자 메서드(Throwable의 getCause 메서드)** 를 통해 필요하면 언제든 **저수준 예외**를 꺼내 볼 수 있다.
 
 ## 핵심 정리
 
