@@ -41,7 +41,7 @@ public abstract class AbstractSequentialList<E> extends AbstractList<E> {
 }
 ```
 
-* **예외 번역**시 저수준 예외가 디버깅에 도움이 된다면 **예외 연쇄(exception chaining)** 를 사용하는 게 좋다.
+**예외 번역**시 저수준 예외가 디버깅에 도움이 된다면 **예외 연쇄(exception chaining)** 를 사용하는 게 좋다.
 
 ## 예외 연쇄
 
@@ -69,8 +69,6 @@ class ChildClass {
 
 * **예외 연쇄**는 문제의 원인을 (getCause 메서드로) 프로그램에서 접근할 수 있게 해주며, 원인과 고수준 예외의 스택 추적 정보 통합해준다.
 * **예외를 전파**하는 것보다 **예외 번역하는 것**이 **우수한 방법**이지만 **남용해서는 안된다.**
-
-
 
 표준 예외 종류...
 
