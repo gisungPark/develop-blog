@@ -19,7 +19,7 @@ try {
 }
 ```
 
-실예제를 살펴보자
+AbstractList에서  수행하는예외번역 예제는 아래와 같다.
 
 ```java
 public abstract class AbstractSequentialList<E> extends AbstractList<E> {
