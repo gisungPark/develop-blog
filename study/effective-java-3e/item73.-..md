@@ -5,14 +5,11 @@
 * 수행하려던 일과 관련없어 보이는 예외가 발생할 수 있다.
 * 구현 방식을 바꾸면 또 다른 예외를 발생시켜 기존 클라이언트 프로그램을 깨지게 할 수 있다.
 
-이 문제를 피하려면 상위 계층에서는 저수준 예외를 잡아 자신의 추상화 수준에 맞는 예외로 바꿔 던져야 한다. 이를 예외번역이라 한다.
-
-
-
 ```java
 try {
     // 저수준 추상화를 이용한다.
 }catch(LowerLevelException e) {
+    // 추상화 수준에 맞게 번역한다.
     throw new HigherLevelException(....);
 }
 ```
@@ -22,12 +19,8 @@ try {
 * 상위 계층에서는 **저수준 예외**를 잡아 자신의 **추상화 수준에 맞는 예외**로 바꿔 던져야 한다.
 * 이를 **예외 번역(Exception Translation)** 이라 한다.
 
-
-
 ```java
 public abstract class AbstractSequentialList<E> extends AbstractList<E> {
-
-
     /**
      * Returns the element at the specified position in this list.
      *
