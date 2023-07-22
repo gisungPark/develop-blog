@@ -15,7 +15,7 @@
 이러한 핵심적인 내용 때문에 디미터 법칙은 '낯선 이에게 말하지 마라'라고도 불리며,\
 한 객체가 알아야 하는 다른 객체를 최소한으로 유지하라는 의미로 principle of least knowledge(최소 지식 원칙)라고도 불린다.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Board 객체의 addComment 메서드를 살펴보자.\
 boar객체의 인스턴수 변수 posts에서 getter를 거듭해 멀리 떨어져 있는 낯선 객체 Comment를 추가하는 코드이다.
