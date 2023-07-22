@@ -80,6 +80,7 @@
 * [Real MySQL 8.0](study/real-mysql-8.0/README.md)
   * [8. 인덱스](study/real-mysql-8.0/8./README.md)
     * [Page 2](study/real-mysql-8.0/8./page-2.md)
+* [엔지니어를 위한 문장의 기술](study/undefined.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 
