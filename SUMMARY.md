@@ -74,6 +74,8 @@
     * [단일 책임 원칙(SRP)](study/tdd-cleancode-with-java/3.-fp-oop/srp.md)
     * [의존 역전 원칙(DIP)](study/tdd-cleancode-with-java/3.-fp-oop/dip.md)
     * [디미터 법칙(Law of Demeter)](study/tdd-cleancode-with-java/3.-fp-oop/law-of-demeter.md)
+  * [미션4. LMS](study/tdd-cleancode-with-java/4.-lms/README.md)
+    * [주 생성자, 부생성자](study/tdd-cleancode-with-java/4.-lms/undefined.md)
 * [Real MySQL 8.0](study/real-mysql-8.0/README.md)
   * [8. 인덱스](study/real-mysql-8.0/8./README.md)
     * [Page 2](study/real-mysql-8.0/8./page-2.md)
