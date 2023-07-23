@@ -6,7 +6,7 @@ layered Architecture는 코드를 모듈화하고 재사용성을 높여서, 애
 
 각 계층은 분명 서로 상호작용이 일어나지만, 다른 계층에서 발생하는 일에 대해선 전혀 몰라도 된다.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Presentation Layer
   * Spring MVC패턴을 통해 사용자의 요청을 처리하고 응답 생서
