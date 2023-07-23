@@ -4,7 +4,8 @@
 
 * [토비의 스프링 부트 - 이해와 원리](README.md)
   * [01. 스프링 부트 살펴보기](study/toby-spring/01..md)
-  * [02. 스프링 부트 시작하기](study/toby-spring/02..md)
+  * [02. 스프링 부트 시작하기](study/toby-spring/02./README.md)
+    * [Http 기본](study/toby-spring/02./http.md)
   * [03. 독립 실행형 서블릿 어플리케이션](study/toby-spring/03..md)
     * [Servlet](study/toby-spring/03./servlet.md)
     * [스프링 Bean이란?, Bean을 관리하는 컨테이너란?](study/toby-spring/03./bean-bean.md)
