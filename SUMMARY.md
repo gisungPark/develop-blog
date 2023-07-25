@@ -53,6 +53,7 @@
   * [item73. 추상화 수준에 맞는 예외를 던지라.](study/effective-java-3e/item73.-..md)
   * [11장. 동시성](study/effective-java-3e/11-./README.md)
     * [item78. 공유 중인 가변 데이터는 동기화해 사용하라.](study/effective-java-3e/11-./item78.-..md)
+    * [item83. 지연 초기화는 신중히 사용하라.](study/effective-java-3e/11-./item83.-..md)
 * [재고시스템으로 알아보는 동시성 이슈](study/concurrency-issues-by-java/README.md)
   * [synchronized를 이용한 동시성 제어](study/concurrency-issues-by-java/synchronized.md)
   * [Database를 이용한 동시성 제어](study/concurrency-issues-by-java/database.md)
