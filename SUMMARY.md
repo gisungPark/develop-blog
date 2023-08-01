@@ -57,6 +57,7 @@
   * [12장. 직렬화](study/effective-java-3e/12-./README.md)
     * [자바 직렬화](study/effective-java-3e/12-./undefined.md)
     * [item85. 자바 직렬화의 대안을 찾으라](study/effective-java-3e/12-./item85..md)
+    * [item87. 커스텀 직렬화 형태를 고려해보라](study/effective-java-3e/12-./item87..md)
 * [재고시스템으로 알아보는 동시성 이슈](study/concurrency-issues-by-java/README.md)
   * [synchronized를 이용한 동시성 제어](study/concurrency-issues-by-java/synchronized.md)
   * [Database를 이용한 동시성 제어](study/concurrency-issues-by-java/database.md)
