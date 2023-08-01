@@ -13,13 +13,13 @@
 
 DI를 할때, 인터페이스와 클래스의 관계가 1:N인 경우가 대다수 이다.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * 자동차 이동 유무에 따른 요구사항 변경
   * Random 값을 기반으로 자동차의 이동 유무 판단 -> 컴퓨터의 시간을 기반으로 자동차의 유무 판단으로 요구사항 변경
   * 이동 전략을 인터페이스로 분리한다.(변경 가능성이 있는 것을 인터페이스로 분리)
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 인터페이스를 남발하다보면 오버엔지니어링할 가능성이 있다. 인터페이스를 어느 시점에 분리할지 찾는 것은 매우 어렵다.
 
