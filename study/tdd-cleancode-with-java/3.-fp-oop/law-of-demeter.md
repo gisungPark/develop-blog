@@ -47,7 +47,7 @@ getter를 통해 `Post` 객체의 `List<Comment> comments`를 사용하던 `Boar
 * 메서드 내부에서 생성, 초기화된 객체의 메서드들
 * 인스턴스 변수를 가지고 있는 객체가 소유한 메서드들
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

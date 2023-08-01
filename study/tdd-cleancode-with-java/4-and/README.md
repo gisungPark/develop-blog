@@ -13,7 +13,7 @@
 
 DI를 할때, 인터페이스와 클래스의 관계가 1:N인 경우가 대다수 이다.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 * 자동차 이동 유무에 따른 요구사항 변경
   * Random 값을 기반으로 자동차의 이동 유무 판단 -> 컴퓨터의 시간을 기반으로 자동차의 유무 판단으로 요구사항 변경
