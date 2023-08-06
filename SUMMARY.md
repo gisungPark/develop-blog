@@ -16,6 +16,7 @@
     * [메타 애노테이션과 합성 애노테이션](study/toby-spring/05./undefined.md)
     * [빈 오브젝트의 역할과 구분](study/toby-spring/05./undefined-1.md)
     * [인프라 빈 구성 정보의 분리](study/toby-spring/05./undefined-2.md)
+    * [동적인 자동 구성 정보 등록](study/toby-spring/05./undefined-3.md)
 * [이펙티브 자바 3/E](<README (1).md>)
   * [2장. 객체 생성과 파괴](study/effective-java-3e/2-./README.md)
     * [item1. 생성자 대신 정적 팩터리 메서드를 고려하라.](study/effective-java-3e/2-./item1.-..md)
