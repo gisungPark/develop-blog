@@ -95,6 +95,9 @@
   * [8. 인덱스](study/real-mysql-8.0/8./README.md)
     * [Page 2](study/real-mysql-8.0/8./page-2.md)
 * [엔지니어를 위한 문장의 기술](study/undefined.md)
+* [쿠버네티스](study/undefined-1/README.md)
+  * [쿠버네티스란 무엇인가?](study/undefined-1/undefined.md)
+  * [쿠버네티스 컴포넌트](study/undefined-1/undefined-1.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 
