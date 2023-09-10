@@ -99,6 +99,7 @@
   * [쿠버네티스란 무엇인가?](study/undefined-1/undefined.md)
   * [쿠버네티스 컴포넌트](study/undefined-1/undefined-1.md)
   * [컨테이너 오케스트레이션](study/undefined-1/undefined-2.md)
+* [PostgreSQL](study/postgresql.md)
 
 ## 🚩 사이드 프로젝트 <a href="#side-project" id="side-project"></a>
 

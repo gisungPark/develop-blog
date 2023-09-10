@@ -29,7 +29,7 @@ boar객체의 인스턴수 변수 posts에서 getter를 거듭해 멀리 떨어�
 
 <figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 getter를 통해 `Post` 객체의 `List<Comment> comments`를 사용하던 `Board` 객체의 `addComment`메서드가 깨지게 된다. 이처럼 `Board` 객체의  `addComment`메서드 내에서 `Post`객체도 알고 `Comment` 객체도 알고 있다면 `Board` 객체는 `Post`객체의 변화에도 영향을 받고 `Comment`객체의 변화에도 영향을 받는다.
 

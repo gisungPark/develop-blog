@@ -100,7 +100,7 @@ Public static List<Apple> filterApples(List<Apple> inventory, ApplePredicate p) 
 
 
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 익명 클래스 사용
 

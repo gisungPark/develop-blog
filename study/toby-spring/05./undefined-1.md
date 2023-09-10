@@ -6,7 +6,7 @@
 
 
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 스프링부트가 컨테이너리스를 지원하기 위해서 내장형 서블릿 컨테이너를 이용하는 독립실행형 애플리케이션 방식으로 동작하면서 요구되어진 빈 2개가 있다. ServletWebServerFactory, DispatcherServlet&#x20;
 
