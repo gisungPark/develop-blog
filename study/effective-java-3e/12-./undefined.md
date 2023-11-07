@@ -7,7 +7,7 @@
 * 시스템 적으로 이야기 하자면 JVM의 메모리에 상주하는 객체 데이터를 바이트 형태로 변환하는 기술과
 * 직렬화된 바이트 형태의 데이터를 객체로 변환해서 JVM으로 상주시키는 형태를 같이 이야기합니다.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 \*바이트 스트림; 스트림은 클라이언트와 서버 사이 출발지, 목적지로 입출력하기 위한 **데이터가 흐르는 통로를 말한다**. 자바는 스트림의 기본 단위를 바이트로 두고 있기 때문에 네트워크 또는 데이터베이스로 전송하기 위한 최소 단위인 바이트 스트림으로 변환하여 처리한다.
 

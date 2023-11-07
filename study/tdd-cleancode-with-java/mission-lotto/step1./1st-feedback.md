@@ -6,7 +6,7 @@
 
 이번 미션 구현하시느라 수고하셨습니다!! 그래도 Enum도 적절히 활용하시고 코드가 전반적으로 잘 분리가 된 느낌이에요!! 제가 몇 가지 부분에 대해서 피드백 남겨두었는데 한 번 확인하시고 피드백 반영 부탁드릴게요 :)
 
-
+***
 
 In [README.md](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179874043):
 
@@ -24,7 +24,7 @@ In [README.md](https://github.com/next-step/java-lotto/pull/2998#discussion\_r11
 
 구현할 기능 목록을 상세히 작성해주셨네요 👍🏼
 
-
+***
 
 In [src/main/java/domain/Calculator.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179877070):
 
@@ -39,7 +39,7 @@ In [src/main/java/domain/Calculator.java](https://github.com/next-step/java-lott
 
 [https://techblog.woowahan.com/2527/](https://techblog.woowahan.com/2527/)
 
-
+***
 
 In [src/main/java/domain/Calculator.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179877599):
 
@@ -64,7 +64,7 @@ In [src/main/java/domain/Calculator.java](https://github.com/next-step/java-lott
 
 secondNum이 0과 같은 값이 들어오면 해당 로직이 문제가 발생할 것 같아요!!
 
-
+***
 
 In [src/main/java/domain/Numbers.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179877764):
 
@@ -75,7 +75,7 @@ In [src/main/java/domain/Numbers.java](https://github.com/next-step/java-lotto/p
 
 상수와 변수 사이에 공백을 주면 가독성을 개선할 수 있어요!!
 
-
+***
 
 In [src/main/java/view/InputView.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179889762):
 
@@ -88,7 +88,7 @@ In [src/main/java/view/InputView.java](https://github.com/next-step/java-lotto/p
 
 KeyboardInput 클래스를 나눈 것이 잘못된 건 전혀 아닌데 현재는 각각의 클래스의 책임이나 역할이 적어서 같이 한 클래스로 써도 괜찮을 것 같아요!! ㅎㅎ 그리고 혹시 View는 객체로 사용하시고 KeyboardInput은 클래스로 사용하셨는데 이렇게 비슷한 두 클래스의 사용 방식을 다르게 가져간 이유가 있을까요?
 
-
+***
 
 In [src/main/java/domain/Operation.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179890024):
 
@@ -104,7 +104,7 @@ In [src/main/java/domain/Operation.java](https://github.com/next-step/java-lotto
 
 앗, 여기 이미 Enum으로 관리하고 있었네요!! 그렇다면 각각의 operator가 하는 행위를 함께 관리해보는 것은 어떨까요?
 
-
+***
 
 In [src/main/java/domain/Operation.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179890122):
 
@@ -119,7 +119,7 @@ In [src/main/java/domain/Operation.java](https://github.com/next-step/java-lotto
 
 stream을 활용하면 더 깔끔하게 해결할 수 있을 것 같아요!!
 
-
+***
 
 In [src/main/java/domain/StringCalculator.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179890567):
 
@@ -130,7 +130,7 @@ In [src/main/java/domain/StringCalculator.java](https://github.com/next-step/jav
 
 해당 값을 꼭 필드로 가지고 있을 필요는 없을 것 같은데 어떻게 생각하시나요? 밖에서 Numbers와 Operations를 만들어서 calculate 메서드에 전달해준다면 해당 필드들은 따로 가지고 있을 필요가 없을 것 같아요!! :)
 
-
+***
 
 In [src/main/java/domain/StringCalculator.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179891013):
 
@@ -155,7 +155,7 @@ In [src/main/java/domain/StringCalculator.java](https://github.com/next-step/jav
 
 메서드나 변수 이름에 축약어를 지양하시면 좋을 것 같아요!! 특정한 축약어에 대한 이해가 없는 사람이 본다면 코드의 가독성이 떨어져 보일 것 같아요!!
 
-
+***
 
 In [src/main/java/domain/StringCalculator.java](https://github.com/next-step/java-lotto/pull/2998#discussion\_r1179892249):
 

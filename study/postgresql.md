@@ -30,7 +30,7 @@ psql의 메모리 영역은 용도와 접근성에 따라 크게 로컬 메모�
 parser에서 수행하는 단계를 정확히 이해하기 위하여 Parser Tree라는 개념에 대해서 알 필요가 있습니다. Parser Tree는 Parse Node라고 불리는 구조체들로 이루어진 Tree입니다. Parser Node는 해당 구문의 성격(INSERT, SELECT 등)에 따라 상이한 내용을 담고 있습니다.\
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://oss.tibero.com/6c2ff524-645e-45f2-a05b-0cd409d12a78" %}
 
