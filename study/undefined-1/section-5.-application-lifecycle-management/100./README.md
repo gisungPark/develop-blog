@@ -64,5 +64,16 @@ config-map.yaml
 
 ## configMap을 Pod에 주입하는 방법
 
+> ```yaml
+>   env:
+>         # 환경 변수 정의
+>         - name: PLAYER_INITIAL_LIVES # 참고로 여기서는 컨피그맵의 키 이름과
+>           # 대소문자가 다르다.
+>           valueFrom:
+>             configMapKeyRef:
+>               name: game-demo           # 이 값의 컨피그맵.
+>               key: player_initial_lives # 가져올 키.
+> ```
+
 
 
