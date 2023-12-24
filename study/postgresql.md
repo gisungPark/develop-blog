@@ -30,7 +30,7 @@ psql의 메모리 영역은 용도와 접근성에 따라 크게 로컬 메모�
 parser에서 수행하는 단계를 정확히 이해하기 위하여 Parser Tree라는 개념에 대해서 알 필요가 있습니다. Parser Tree는 Parse Node라고 불리는 구조체들로 이루어진 Tree입니다. Parser Node는 해당 구문의 성격(INSERT, SELECT 등)에 따라 상이한 내용을 담고 있습니다.\
 
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://oss.tibero.com/6c2ff524-645e-45f2-a05b-0cd409d12a78" %}
 
@@ -38,7 +38,7 @@ parser에서 수행하는 단계를 정확히 이해하기 위하여 Parser Tree
 
 analyzer는 parser에서 생성한 parse tree를 입력받아 query Tree를 생성합니다. 상술하였듯 parse Tree는 문법만 고려되어 있고 실제 테이블, 컬럼과 같은 의미론적인(semantic) 내용은 포함하고 있지 않습니다. Analyzer에서는 parse Tree에서 언급하는 테이블, 컬럼, 연산자의 유효성 등에 대한 Semantic 검증을 System Catalog 조회를 통해 수행하고, 해당 내용을 추가하여 Query Tree를 생성합니다. 즉 Query Tree는 Parse Tree와 다리 테이블 컬럼을 참조하기 위한 정보를 포함하고 있다는 점에서 차이를 보입니다.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Rewriter
 
@@ -60,7 +60,7 @@ Analyzer와 Rewriter를 거친 Query Tree는 Planner에 전달됩니다. Planner
 
 
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (1).png>)
 
 클라이언트부터 질의 요청이 들어오면 구문 분석 과정(1)을 통해 Parser Tree를 생성하고 의미 분석 과정(2)을 통해 새로운 트랜잭션을 시작하고 Query Tree를 생성한다.
 

@@ -2,6 +2,7 @@
 
 * [자바](README.md)
   * [Call stack overhead](undefined/call-stack-overhead.md)
+  * [JVM](undefined/jvm.md)
 
 ## 스터디 <a href="#study" id="study"></a>
 
