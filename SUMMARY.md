@@ -3,6 +3,7 @@
 * [자바](README.md)
   * [Call stack overhead](undefined/call-stack-overhead.md)
   * [JVM](undefined/jvm.md)
+  * [Runtim Data Area](undefined/runtim-data-area.md)
 
 ## 스터디 <a href="#study" id="study"></a>
 
